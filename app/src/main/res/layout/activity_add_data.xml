@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ad">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fillViewport="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/PhoneNumber"
+                android:layout_width="373dp"
+                android:layout_height="79dp"
+                android:ems="10"
+                android:hint="Enter Phone Number"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|phone"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/SelectedDate"
+                android:layout_width="371dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:hint="Select Date"
+                android:importantForAutofill="no"
+                android:inputType="date|textPersonName"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/CustomerName"
+                android:layout_width="363dp"
+                android:layout_height="72dp"
+                android:ems="10"
+                android:hint="Customer Name"
+                android:importantForAutofill="no"
+                android:inputType="date|textPersonName"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/location"
+                android:layout_width="370dp"
+                android:layout_height="69dp"
+                android:ems="10"
+                android:hint="Location"
+
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pax"
+                android:layout_width="373dp"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:hint="NumberOfPax"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Remarks"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="371dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:hint="Amount"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lineSpacingExtra="8sp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="366dp"
+                android:layout_height="65dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:hint="Save"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/bpstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#CFD8DC"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Disconnected"
+                android:textColor="#C73B3B"
+                android:textSize="24dp" />
+            <Button
+                android:id="@+id/Scan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="#ab000d"
+
+                android:gravity="left|center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="34dp"
+                android:paddingTop="3dp"
+                android:text="Connect"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mPrint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="#ab000d"
+
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="34dp"
+                android:paddingTop="3dp"
+                android:text="Print"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

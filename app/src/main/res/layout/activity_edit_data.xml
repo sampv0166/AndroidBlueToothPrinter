@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6BAFDFDF"
+    tools:context=".AddEventDetails">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/PhoneNumber"
+                android:layout_width="373dp"
+                android:layout_height="79dp"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:hint="@string/Phone"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textAutoComplete|phone" />
+
+            <EditText
+                android:id="@+id/SelectedDate"
+                android:layout_width="371dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:hint="Select Date"
+                android:importantForAutofill="no"
+                android:inputType="date|textPersonName" />
+
+            <EditText
+                android:id="@+id/CustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:hint="Customer Name"
+                android:importantForAutofill="no"
+                android:inputType="date|textPersonName" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="370dp"
+                android:layout_height="69dp"
+                android:ems="10"
+                android:hint="Location"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pax"
+                android:layout_width="373dp"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:hint="NumberOfPax"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="371dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:hint="Amount"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Remarks"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="366dp"
+                android:layout_height="61dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:hint="Save"
+                android:textColor="#4CAF50"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
